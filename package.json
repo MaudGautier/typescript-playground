@@ -2,7 +2,8 @@
   "name": "typescript-kata-starter",
   "version": "1.0.0",
   "description": "Starter repo for kata exercises with Node, TypeScript & Jest",
-  "main": "src/index.js",
+  "author": "Maud Gautier",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest --watch --coverage"
   },
