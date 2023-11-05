@@ -21,3 +21,7 @@ npm run prettier
   child function:
   - Linked to destructuring which breaks links between union types
   - Can be restored by using a discriminant property.
+- `excessPropertyCheck` - Understand excess property checking on object literal:
+  - Done on object literal
+  - Can be bypassed when using an intermediary variable
+  - The intermediary variable needs to have at least one property in common (otherwise, other TS error).
