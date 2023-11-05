@@ -31,3 +31,5 @@ npm run prettier
     i.e. if each function can deal individually with all possible parameters passed)
   - FunctionA & FunctionB (Function<ArgA | ArgB>) is a subset of Function<ArgA>
   - FunctionA | FunctionB (Function<ArgA & ArgB>) is a superset of Function<ArgA>
+- `objectLiteralIntersection` - Understand object literal intersection:
+  - TS cannot correctly infer the resulting intersection of type literals => do not rely on TS inference
