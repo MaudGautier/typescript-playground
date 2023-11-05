@@ -1,15 +1,16 @@
-# JavaScript/TypeScript Kata Starter
+# Typescript playground
+
+This project is a small playground for me to experiment and better understand some behaviors of TypeScript.
 
 ## Getting started
+
 ```
 # Install dependencies
 npm install
 
-# Add dependencies
-npm add --save-dev DEPENDENCY_NAME
+# Compile and check for TS errors
+npm run tsc
 
-# Run custom scripts
-npm run SCRIPT_NAME
+# Run prettier
+npm run prettier
 ```
-
-

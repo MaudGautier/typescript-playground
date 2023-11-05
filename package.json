@@ -1,7 +1,7 @@
 {
-  "name": "typescript-kata-starter",
+  "name": "typescript-playground",
   "version": "1.0.0",
-  "description": "Starter repo for kata exercises with Node, TypeScript & Jest",
+  "description": "Playground to experiment and test some behaviors of TypeScript",
   "author": "Maud Gautier",
   "main": "src/index.ts",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com:MaudGautier/my-js-kata-starter.git"
+    "url": "git+https://github.com:MaudGautier/typescript-playground.git"
   }
 }
