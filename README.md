@@ -14,3 +14,10 @@ npm run tsc
 # Run prettier
 npm run prettier
 ```
+
+## Experiments
+
+- `discriminatedUniontTypeInference` - Understand why union types structure are not conserved when passed down to a
+  child function:
+  - Linked to destructuring which breaks links between union types
+  - Can be restored by using a discriminant property.
