@@ -1,0 +1,59 @@
+// Documentation of all possible options: https://www.typescriptlang.org/tsconfig
+// Documentation of modules (=> understand options): https://www.typescriptlang.org/docs/handbook/modules/theory.html
+// NB: Some of these options will not be necessary for most projects using my starter project. Adding them anyway so as
+//     to be able to refer to this file as some documentation (of options understood) for later.
+{
+  "compilerOptions": {
+    // ---------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------ Language and Environment -------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------
+    // 👇 Recommended by the doc: ES6 is supported by all modern browsers
+    "target": "es6",
+    // 👇 Adds additional APIs
+    "lib": [
+      // 👇 Adds DOM definitions (window, document, etc.)
+      "dom",
+      // 👇 Adds additional APIs available in ESNext
+      "esnext"
+    ],
+    // ---------------------------------------------------------------------------------------------------------------
+    // --------------------------------------------------- Modules ---------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------
+    // 👇 Recommended by doc: moving target reflecting the latest Node.js versions as Node.js’s module system evolves.
+    "module": "nodenext",
+    // 👇 Already implied with the module "nodenext" set above
+    "moduleResolution": "nodenext",
+    // 👇 Allows importing modules with a JSON extension
+    "resolveJsonModule": true,
+    // 👇 Already by default: the longest common path of all non-declaration input files
+    "rootDir": "./src",
+    // ---------------------------------------------------------------------------------------------------------------
+    // ---------------------------------------------------- Emit -----------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------
+    // 👇 Generates ".d.ts" files for every TypeScript or JavaScript file inside your project
+    "declaration": true,
+    // 👇 Generates a source map for ".d.ts" files which map back to the original ".ts" source file
+    //    --> Allows to go to the original ".ts" file when using features like "Go to Definition"
+    "declarationMap": true,
+    // 👇 Where emitted ".js", ".d.ts" files are emitted (default: current directory)
+    "outDir": "dist",
+    // ---------------------------------------------------------------------------------------------------------------
+    // --------------------------------------------- Interop constraints ---------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------
+    // 👇 Fixes some problems in the code transpiled by TypeScript (linked to CommonJS being treated as ES6 modules)
+    //    NB: Also sets "allowSyntheticDefaultImports" to true
+    "esModuleInterop": true,
+    // ---------------------------------------------------------------------------------------------------------------
+    // ------------------------------------------------ Type Checking ------------------------------------------------
+    // ---------------------------------------------------------------------------------------------------------------
+    // 👇 Turns on all "strict mode family options" (strictFunctionTypes, strictNullChecks, noImplicitAny...)
+    "strict": true,
+    // 👇 To enforce having no unused variable
+    "noUnusedLocals": true,
+    // 👇 To enforce having no implicit "any" (i.e. forces to define a type)
+    "noImplicitAny": true,
+    // 👇 To enforce having no unused parameters in a function
+    "noUnusedParameters": true
+  },
+  "exclude": ["node_modules", "dist"]
+}
