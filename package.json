@@ -6,7 +6,8 @@
   "main": "src/index.ts",
   "scripts": {
     "test": "jest --watch --coverage",
-    "tsc": "tsc"
+    "tsc": "tsc --noEmit",
+    "prettier": "prettier --loglevel silent ./ --check --write"
   },
   "type": "module",
   "devDependencies": {
