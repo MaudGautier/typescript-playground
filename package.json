@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Playground to experiment and test some behaviors of TypeScript",
   "author": "Maud Gautier",
-  "main": "src/index.ts",
   "scripts": {
     "test": "jest --watch --coverage",
     "tsc": "tsc --noEmit",
