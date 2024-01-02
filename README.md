@@ -17,7 +17,7 @@ npm run prettier
 
 ## Experiments
 
-- `discriminatedUniontTypeInference` - Understand why union types structure are not conserved when passed down to a
+- `discriminatedUnionTypeInference` - Understand why union types structure are not conserved when passed down to a
   child function:
   - Linked to destructuring which breaks links between union types
   - Can be restored by using a discriminant property.
@@ -33,3 +33,6 @@ npm run prettier
   - FunctionA | FunctionB (Function<ArgA & ArgB>) is a superset of Function<ArgA>
 - `objectLiteralIntersection` - Understand object literal intersection:
   - TS cannot correctly infer the resulting intersection of type literals => do not rely on TS inference
+- `discriminatedUnionTypeInferenceCircumventWithDistributivity` - Understand how to circumvent some limitations of
+  discriminated union types with distributivity:
+  - Conditional types distribute over unions => we can use them to recreate types that are correctly discriminated
